@@ -25,14 +25,25 @@ This MCP automates all of these steps and presents the information in a token-ef
 
 ## Installation
 
-### 1. Install Dependencies
+### Quick Install from GitHub
 
 ```bash
-cd ~/Developer/claude-plugins/pr-review-helper
-npm install
+/plugin marketplace add https://github.com/Robdel12/claude-plugins
+/plugin install pr-review-helper@rob-marketplace
 ```
 
-### 2. Authenticate with GitHub CLI
+Restart Claude Code when prompted.
+
+### Local Development Install
+
+If you've cloned the repository locally:
+
+```bash
+/plugin marketplace add ~/Developer/claude-plugins
+/plugin install pr-review-helper@rob-marketplace
+```
+
+### Authentication
 
 The MCP server automatically uses `gh` CLI for authentication. Just make sure you're logged in:
 
@@ -43,25 +54,6 @@ gh auth login
 That's it! The plugin automatically detects your repository from git remote.
 
 > **Note**: If you prefer to use a personal access token instead, you can set the `GITHUB_TOKEN` environment variable and it will use that.
-
-### 3. Add Marketplace to Claude Code
-
-```bash
-claude
-```
-
-Then in Claude Code:
-```
-/plugin marketplace add ~/Developer/claude-plugins
-```
-
-### 4. Install the Plugin
-
-```
-/plugin install pr-review-helper@rob-marketplace
-```
-
-Select "Install now" and restart Claude Code when prompted.
 
 ## Usage
 
