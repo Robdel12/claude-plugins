@@ -9,6 +9,11 @@
       "name": "pr-review-helper",
       "source": "./pr-review-helper",
       "description": "MCP server for streamlined PR reviews with CI log fetching and Linear ticket integration"
+    },
+    {
+      "name": "rob-writing-style",
+      "source": "./rob-writing-style",
+      "description": "My personal writing style - conversational, enthusiastic, and approachable"
     }
   ]
 }
